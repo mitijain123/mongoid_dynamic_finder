@@ -7,3 +7,5 @@ Artist.find_first_by_name("Mitesh")
 Artist.find_first_by_name_and_title("Mitesh", "Mr.")
 Artist.find_last_by_name_and_title("Mitesh", "Mr.")
 Artist.find_last_by_name("Mitesh")
+
+Example Rails app: https://github.com/mitijain123/mongoid-sample
