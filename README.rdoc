@@ -1,0 +1,37 @@
+=Mongoid Dynamic Finder
+
+Install this gem to use ActiveRecord type Dynamic Finders for your rails app on MongoDB.
+
+=Installation
+
+gem install 'mongoid_dynamic_finder' in your gemfile. Don't forget to run Bundle install
+
+=Features
+
+You can now use the dynamic finders used in ActiveRecord.
+
+For Artist model, here are a few examples :
+
+ Artist.create(:name => "Your Name")
+ Artist.find_by_name("Your Name")
+
+This would fetch the row within your collection for Artist named 'Your Name'. If not present, this would return 'nil'
+
+Pass in two attributes in your finder.
+
+ Artist.find_by_name_and_title('Some Artist' , 'Mr.')
+
+Use the 'first' and 'last' keywords
+
+ Artist.find_first_by_name('Van Gogh')
+ Artist.find_last_by_name('Picasso')
+ Artist.find_first_by_name_and_title("Muhammad Ali", "Boxer")
+ Artist.find_last_by_name_and_title("Rocky Balboa", "Boxer")
+
+Raise exceptions by using Bang ('!')
+
+ Artist.find_by_name!('Unknown Artist')
+
+This would raise an exception while the rest would give out 'nil'.
+
+{Try the sample app using this gem.}[https://github.com/mitijain123/mongoid-sample]
