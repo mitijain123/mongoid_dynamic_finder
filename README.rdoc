@@ -35,3 +35,5 @@ Raise exceptions by using Bang ('!')
 This would raise an exception while the rest would give out 'nil'.
 
 {Try the sample app using this gem.}[https://github.com/mitijain123/mongoid-sample]
+
+<a href="https://www.omniref.com/ruby/gems/mongoid_dynamic_finder"><img src="https://www.omniref.com/ruby/gems/mongoid_dynamic_finder.png" alt="mongoid_dynamic_finder API Documentation" /></a>
